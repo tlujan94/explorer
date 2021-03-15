@@ -1,8 +1,8 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import {Visualizer} from "./components/visualizer";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Visualizer } from "./components/visualizer";
 
-function App() {
+export default function App() {
     return (
         <Visualizer/>
     );
