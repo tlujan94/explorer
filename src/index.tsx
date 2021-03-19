@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Visualizer } from "./components/visualizer";
+import { Toolbar } from './components/toolbar';
 
 export default function App() {
     return (
-        <Visualizer/>
+        <div>
+            <Toolbar/>
+            <Visualizer/>
+        </div>
     );
 }
 
