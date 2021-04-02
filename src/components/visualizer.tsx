@@ -16,7 +16,7 @@ export class Visualizer extends React.Component<{}, {}> {
     componentDidMount(): void {
         this.explorer = L.map('explorer', {
            center: [37.8, -96],
-           zoom: 3
+           zoom: 4
         });
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
