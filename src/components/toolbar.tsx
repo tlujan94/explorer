@@ -1,10 +1,17 @@
 import React from 'react';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 
-export class Toolbar extends React.Component<{}, {}> {
+type state = {
+    date: Date;
+}
+export class Toolbar extends React.Component<{}, state> {
     constructor(props: {}) {
         super(props);
 
-        this.state = {value: '2020-01-01'}
+        this.state = {
+            date: new Date()
+        }
     }
 
     render() {
@@ -13,9 +20,15 @@ export class Toolbar extends React.Component<{}, {}> {
                 <label>
                     Date:
                     <br/>
-                    January 1, 2020
+                    <DatePicker selected={this.state.date} onChange={this.setDate.bind(this)}/>
                 </label>
             </form>
         </div>;
+    }
+
+    setDate(date: Date) {
+        this.setState({
+           date: date
+        });
     }
 }
