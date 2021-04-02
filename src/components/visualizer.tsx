@@ -10,7 +10,7 @@ export class Visualizer extends React.Component<{}, {}> {
     }
 
     render() {
-        return <div id='explorer' style={{height: '512px', width: '512px', float: 'left'}}/>;
+        return <div id='explorer' style={{height: '640px', width: '768px', float: 'left'}}/>;
     }
 
     componentDidMount(): void {

@@ -8,7 +8,7 @@ export class Toolbar extends React.Component<{}, {}> {
     }
 
     render() {
-        return <div style={{height: '512px', width: '256px', backgroundColor: 'grey', float: 'left', color: 'white'}}>
+        return <div style={{height: '640px', width: '256px', backgroundColor: 'grey', float: 'left', color: 'white'}}>
             <form>
                 <label>
                     Date:
